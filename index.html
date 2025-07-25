@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- set width to match layout of viewing device for responsive scaling -->
+  <meta name="viewport" content="width=device-width" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- use aria label to improve accessibility for navigation bar -->
+  <nav aria-label="Main Navigation">
+    <ul class="nav-list">
+		<!-- each list tag links to a different section -->
+      <li><a href="#home" >Home</a></li>
+      <li><a href="#about" >About Me</a></li>
+      <li><a href="#projects" >Projects</a></li>
+      <li><a href="#contact" >Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section home">
+    <h1>Welcome to Hunter's Portfolio</h1>
+		<p>If you need a website built, look no further!</p>
+		<!-- alt text on image for visually impared users -->
+    <img src="HunterF.jpg" alt="Photo of Hunter" class="profile-photo" />
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Me</h2>
+		<p>My name is Hunter Fredrickson and I'm a Computer Science student and developer who loves building websites.
+		I have a background in programming and recently transitioned into web development.
+		</p>
+		<p>
+		Outside of tech, I enjoy watching movies, playing sports, and spending time with my cats.
+		</p>
+	<img src="cats.jpg" alt="Photo of two cats" class="cats-photo" />
+  </section>
+
+<!-- Each project get its own card for layout flexibility -->
+<section id="projects" class="section projects">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <img src="kahn_t.jpg" alt="Photo of Bob Kahn" />
+    <h3>Bob Kahn Website</h3>
+    <p>A basic website built using HTML focused on Internet Pioneer Bob Kahn.</p>
+  </div>
+  <div class="project-card">
+    <h3>Personal Portfolio</h3>
+    <p>This portfolio website, built with HTML and CSS.</p>
+  </div>
+</section>
+
+<!-- Skills organized with ul to aid readability -->
+<section id="skills" class="section skills">
+  <h2 id="skills-heading">Skills</h2>
+  <ul class="skills-list">
+    <li>HTML & CSS: Webpage structuring, responsive design</li>
+	<li>Java & C++: Object-oriented programming, problem solving</li>
+	<li>Football: Teamwork, strategy, physical fitness</li>
+	<li>Guitar & Drums: Rhythm, coordination, live performance</li>
+  </ul>
+</section>
+
+<!-- Contact Section includes required attributes so it is filled out accurately -->
+<section id="contact" class="section contact">
+  <h2>Contact Me</h2>
+  <!-- aria label added for additional accessability -->
+  <form id="contactForm" aria-label="Contact Form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required aria-required="true" />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required aria-required="true" />
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+<!-- email provided in hyperlink -->
+  <p>You can email me here: <a href="mailto:hkf2@uis.edu">hkf2@uis.edu</a></p>
+</section>
